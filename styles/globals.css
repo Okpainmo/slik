@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+============================
+google font-customization 
+============================
+*/
+
+@layer utilities {
+  .m-serif {
+    font-family: 'Merriweather', serif;
+  }
+
+  .nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* 
+================================
+tailwind color configurations
+================================
+*/
+.bg--primary {
+  @apply bg-gray-200;
+}
+
+.bg--default {
+  @apply bg-white;
+}
+
+.text--colors_primary {
+  @apply text-black;
+}
+
+.text--colors_secondary {
+  @apply text-gray-600;
+}
