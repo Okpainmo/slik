@@ -18,10 +18,10 @@ function PostCard({ postCardsData, data }) {
     if (typeof window !== 'undefined') {
       return `/posts/${slug}`;
     }
-    return process.env.BASE_URL;
+    return `${process.env.BASE_URL}/posts/${slug}`;
   };
 
-  console.log(link());
+  // console.log(link());
 
   return (
     <Link href={link()}>
