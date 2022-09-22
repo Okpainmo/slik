@@ -14,8 +14,17 @@ function PostCard({ postCardsData, data }) {
     return each.fields.file.fileName.slice(0, 1) == postIndex;
   });
 
+  const link = () => {
+    if (typeof window !== 'undefined') {
+      return `/posts/${slug}`;
+    }
+    return process.env.BASE_URL;
+  };
+
+  console.log(link());
+
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link href={link()}>
       <a className='w-full md:w-3/12 md:mx-4'>
         <div className='w-full custom-background mx-auto'>
           <div className='post-image-wrapper w-full relative'>
