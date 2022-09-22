@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { server } from '../../config';
+
 // import DemoPic from '../../assets/images/1.jpg';
 
 function PostCard({ postCardsData, data }) {
@@ -14,17 +16,17 @@ function PostCard({ postCardsData, data }) {
     return each.fields.file.fileName.slice(0, 1) == postIndex;
   });
 
-  const link = () => {
-    if (typeof window !== 'undefined') {
-      return `/posts/${slug}`;
-    }
-    return `${process.env.BASE_URL}/posts/${slug}`;
-  };
+  // const link = () => {
+  //   if (typeof window !== 'undefined') {
+  //     return `/posts/${slug}`;
+  //   }
+  //   return `${process.env.BASE_URL}/posts/${slug}`;
+  // };
 
-  console.log(link());
+  console.log(server);
 
   return (
-    <Link href={link()}>
+    <Link href={`${server}/posts/${slug}`}>
       <a className='w-full md:w-3/12 md:mx-4'>
         <div className='w-full custom-background mx-auto'>
           <div className='post-image-wrapper w-full relative'>
