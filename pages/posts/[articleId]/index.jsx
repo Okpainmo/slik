@@ -62,7 +62,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const url = process.env.MY_CONTENTFUL_SPACE_API;
+  const url =
+    'https://cdn.contentful.com/spaces/9ejtai3vyo33/environments/master/entries?access_token=x8tHSOxCVVi0YvomIMiiREiyptYCqCe43fneRzNE4lM';
   const response = await fetch(url);
   const data = await response.json();
 

@@ -16,7 +16,8 @@ function Index({ data }) {
 export default Index;
 
 export async function getStaticProps() {
-  const url = process.env.SLIK_BLOG_PROJECT_API;
+  const url =
+    'https://cdn.contentful.com/spaces/9ejtai3vyo33/environments/master/entries?access_token=x8tHSOxCVVi0YvomIMiiREiyptYCqCe43fneRzNE4lM&content_type=slikBlogTutorialProject';
   const response = await fetch(url);
   const data = await response.json();
 
