@@ -22,7 +22,7 @@ function PostIntro({ currentPost, data }) {
         <div className='title font-bold text-2xl sm:text-4xl lg:text-5xl montserrat lg:leading-[50px]'>
           {postTitle}
         </div>
-        <span className='text--colors_secondary title-follow-up pt-2 sm:pt-4 text-lg xsm:text-xl lg:text-2xl block capitalize'>
+        <span className='text--colors_secondary title-follow-up pt-2 sm:pt-4 text-lg xsm:text-xl lg:text-2xl block'>
           {postSubtitle}
         </span>
       </div>
