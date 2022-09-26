@@ -8,7 +8,7 @@ function App({ Component, pageProps }) {
         <title>Welcome to slik</title>
       </Head>
 
-      <main className='bg--default'>
+      <main className='bg--default nunito-sans'>
         <Component {...pageProps} />
       </main>
     </>
