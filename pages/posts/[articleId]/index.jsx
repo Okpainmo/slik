@@ -5,7 +5,6 @@ import PostNav from '../../../components/post-page-components/PostNav';
 import PostText from '../../../components/post-page-components/PostText';
 
 function ArticlePostPage({ data, params }) {
-  // console.log(data);
   const slikBlogData = data.items.filter((each) => {
     return each.fields.projectId === 'slik';
   });

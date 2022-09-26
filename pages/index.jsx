@@ -1,8 +1,7 @@
 import React from 'react';
-import Hero from '../components/Home-page-components/Hero';
-import PostWrapper from '../components/Home-page-components/PostWrapper';
+import Hero from '../components/home-page-components/Hero';
+import PostWrapper from '../components/home-page-components/PostWrapper';
 import MainAppLayout from '../components/layout-components/MainAppLayout';
-// import postCardsData from '../assets/data/post-data';
 
 function Index({ data }) {
   return (
