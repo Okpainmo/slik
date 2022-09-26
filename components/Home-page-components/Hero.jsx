@@ -6,7 +6,7 @@ function Hero() {
     <section className='h-[250px] bg--primary w-full flex flex-col justify-between pt-6 sm:pt-12 px-4 sm:px-16 lg:px-28'>
       <Link href='/'>
         <a>
-          <nav className='m-serif text-4xl font-bold'>Slik</nav>
+          <nav className='montserrat italic text-4xl font-bold'>Slik</nav>
         </a>
       </Link>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { server } from '../../config';
+// import { server } from '../../config';
 
 // import DemoPic from '../../assets/images/1.jpg';
 
@@ -23,10 +23,10 @@ function PostCard({ postCardsData, data }) {
   //   return `${process.env.BASE_URL}/posts/${slug}`;
   // };
 
-  console.log(server);
+  // console.log(server);
 
   return (
-    <Link href={`${server}/posts/${slug}`}>
+    <Link href={`/posts/${slug}`}>
       <a className='w-full md:w-3/12 md:mx-4'>
         <div className='w-full custom-background mx-auto'>
           <div className='post-image-wrapper w-full relative'>
@@ -40,7 +40,7 @@ function PostCard({ postCardsData, data }) {
             {postTitle}
           </div>
           <div className='extra-details mt-2'>
-            <div className='author-section flex items-center uppercase'>
+            <div className='author-section flex items-center uppercase text-[10px]'>
               {authorName}
             </div>
           </div>
