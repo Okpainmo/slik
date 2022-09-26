@@ -1,10 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-// import postBanner from '../../assets/images/1.jpg';
 
 function PostIntro({ currentPost, data }) {
-  // console.log(currentPost);
-
   const { postTitle, postSubtitle, authorName, postIndex } = currentPost[0];
 
   const slikMediaData = data.includes.Asset.filter((each) => {
@@ -14,6 +11,10 @@ function PostIntro({ currentPost, data }) {
   const postImage = slikMediaData.filter((each) => {
     return each.fields.file.fileName.slice(0, 1) == postIndex;
   });
+
+  // const postImage = data.includes.Asset.filter((each) => {
+  //   return each.fields.file.fileName.slice(0, 1) == postIndex;
+  // });
 
   return (
     <section className='intro-post-details'>
