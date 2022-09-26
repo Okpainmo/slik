@@ -6,7 +6,6 @@ import PostText from '../../../components/post-page-components/PostText';
 
 function ArticlePostPage({ data, params }) {
   // console.log(data);
-
   const slikBlogData = data.items.filter((each) => {
     return each.fields.projectId === 'slik';
   });
@@ -35,8 +34,12 @@ function ArticlePostPage({ data, params }) {
 export default ArticlePostPage;
 
 export async function getStaticPaths() {
+  const spaceId = process.env.MY_CONTENTFUL_SPACE_ID;
+  const accessToken = process.env.MY_CONTENTFUL_ACCESS_TOKEN;
+  const environment = process.env.MY_CONTENTFUL_ENVIRONMENT;
+
   const response = await fetch(
-    `https://cdn.contentful.com/spaces/9ejtai3vyo33/environments/master/entries?access_token=x8tHSOxCVVi0YvomIMiiREiyptYCqCe43fneRzNE4lM`
+    `https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries?access_token=${accessToken}`
   );
   const data = await response.json();
 
@@ -61,9 +64,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  const spaceId = process.env.MY_CONTENTFUL_SPACE_ID;
+  const accessToken = process.env.MY_CONTENTFUL_ACCESS_TOKEN;
+  const environment = process.env.MY_CONTENTFUL_ENVIRONMENT;
+
   const { params } = context;
-  const url =
-    'https://cdn.contentful.com/spaces/9ejtai3vyo33/environments/master/entries?access_token=x8tHSOxCVVi0YvomIMiiREiyptYCqCe43fneRzNE4lM';
+  const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries?access_token=${accessToken}`;
   const response = await fetch(url);
   const data = await response.json();
 
