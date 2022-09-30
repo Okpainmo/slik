@@ -1,7 +1,7 @@
 import React from 'react';
 import MainAppLayout from '../../../components/layout-components/MainAppLayout';
 import PostIntro from '../../../components/post-page-components/PostIntro';
-import PostNav from '../../../components/post-page-components/PostNav';
+import Navbar from '../../../components/layout-components/Navbar';
 import PostText from '../../../components/post-page-components/PostText';
 
 function ArticlePostPage({ data, params }) {
@@ -19,7 +19,7 @@ function ArticlePostPage({ data, params }) {
 
   return (
     <>
-      <PostNav />
+      <Navbar />
       <MainAppLayout>
         <div className='w-full sm:w-4/5 lg:w-3/5 mx-auto sm:pt-12'>
           <PostIntro currentPost={currentPost} data={data} />
