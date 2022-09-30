@@ -3,9 +3,9 @@ import React from 'react';
 function PostText({ currentPost }) {
   const { postText } = currentPost[0];
 
-  const articleParagraphs = postText.content[0].content.map(
-    (each) => each.value
-  );
+  const articleParagraphs = postText.content.map((each) => each);
+
+  // console.log(postText.content);
 
   return (
     <section
@@ -20,7 +20,7 @@ function PostText({ currentPost }) {
             className='text--colors_secondary pt-6'
             key={articleParagraphs.indexOf(paragraph)}
           >
-            {paragraph}
+            {paragraph.content[0].value}
           </p>
         );
       })}
