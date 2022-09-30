@@ -13,7 +13,7 @@ function Hero() {
       </nav>
 
       <div className='text-3xl md:text-4xl pb-6 sm:pb-12 font-bold montserrat'>
-        An opensource blog for NextJs/ReactJS and Contentful CMS.
+        Category: ReactJs tutorials.
       </div>
     </section>
   );

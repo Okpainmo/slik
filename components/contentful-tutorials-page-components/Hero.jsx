@@ -1,5 +1,5 @@
 import React from 'react';
-import Navlinks from '../../components/layout-components/Navlinks';
+import Navlinks from '../layout-components/Navlinks';
 import Link from 'next/link';
 
 function Hero() {
@@ -13,7 +13,7 @@ function Hero() {
       </nav>
 
       <div className='text-3xl md:text-4xl pb-6 sm:pb-12 font-bold montserrat'>
-        An opensource blog for NextJs/ReactJS and Contentful CMS.
+        Category: Contentful CMS tutorials.
       </div>
     </section>
   );

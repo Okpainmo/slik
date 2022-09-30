@@ -22,6 +22,10 @@ function Footer() {
           className='underline'
         >
           A.J Okpainmo
+        </a>{' '}
+        and{' '}
+        <a href='#' target='_blank' className='underline'>
+          Contributors
         </a>
       </div>
     </footer>
