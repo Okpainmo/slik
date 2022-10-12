@@ -1,14 +1,14 @@
 import React from 'react';
-import Hero from '../components/home-page-components/Hero';
-import PostWrapper from '../components/home-page-components/PostWrapper';
-import MainAppLayout from '../components/layout-components/MainAppLayout';
+import PostWrapper from '../components/PostWrapper';
+import HeaderPageLayout from '../components/layout-components/HeaderPageLayout';
 
 function Index({ data }) {
+  const isHome = true;
+
   return (
-    <MainAppLayout>
-      <Hero />
+    <HeaderPageLayout isHome={isHome}>
       <PostWrapper data={data} />
-    </MainAppLayout>
+    </HeaderPageLayout>
   );
 }
 

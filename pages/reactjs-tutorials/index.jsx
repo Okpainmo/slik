@@ -1,15 +1,12 @@
 import React from 'react';
-import Hero from '../../components/react-tutorials-page-components/Hero';
-import PostWrapper from '../../components/react-tutorials-page-components/PostWrapper';
-import Footer from '../../components/layout-components/Footer';
+import HeaderPageLayout from '../../components/layout-components/HeaderPageLayout';
+import PostWrapper from '../../components/PostWrapper';
 
 function Index({ data }) {
   return (
-    <>
-      <Hero />
+    <HeaderPageLayout category='ReactJs Tutorials'>
       <PostWrapper data={data} />
-      <Footer />
-    </>
+    </HeaderPageLayout>
   );
 }
 

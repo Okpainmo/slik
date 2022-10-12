@@ -1,15 +1,12 @@
 import React from 'react';
-import Hero from '../../components/contentful-tutorials-page-components/Hero';
-import PostWrapper from '../../components/contentful-tutorials-page-components/PostWrapper';
-import Footer from '../../components/layout-components/Footer';
+import PostWrapper from '../../components/PostWrapper';
+import HeaderPageLayout from '../../components/layout-components/HeaderPageLayout';
 
 function Index({ data }) {
   return (
-    <>
-      <Hero />
+    <HeaderPageLayout category='Contentful CMS Tutorials'>
       <PostWrapper data={data} />
-      <Footer />
-    </>
+    </HeaderPageLayout>
   );
 }
 

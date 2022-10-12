@@ -1,8 +1,7 @@
 import React from 'react';
-import MainAppLayout from '../../../components/layout-components/MainAppLayout';
 import PostIntro from '../../../components/post-page-components/PostIntro';
-import Navbar from '../../../components/layout-components/Navbar';
 import PostText from '../../../components/post-page-components/PostText';
+import NavPageLayout from '../../../components/layout-components/NavPageLayout';
 
 function ArticlePostPage({ data, params }) {
   const slikBlogData = data.items.filter((each) => {
@@ -18,15 +17,12 @@ function ArticlePostPage({ data, params }) {
   );
 
   return (
-    <>
-      <Navbar />
-      <MainAppLayout>
-        <div className='w-full sm:w-4/5 lg:w-3/5 mx-auto sm:pt-12'>
-          <PostIntro currentPost={currentPost} data={data} />
-          <PostText currentPost={currentPost} />
-        </div>
-      </MainAppLayout>
-    </>
+    <NavPageLayout>
+      <div className='w-full sm:w-4/5 lg:w-3/5 mx-auto sm:pt-12'>
+        <PostIntro currentPost={currentPost} data={data} />
+        <PostText currentPost={currentPost} />
+      </div>
+    </NavPageLayout>
   );
 }
 
