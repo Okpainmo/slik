@@ -35,10 +35,24 @@ tailwind color configurations
   @apply bg-white;
 }
 
+.border--primary {
+  @apply border-black;
+}
+
 .text--colors_primary {
   @apply text-black;
 }
 
 .text--colors_secondary {
   @apply text-gray-600;
+}
+
+.nav--slide-in {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav--slide-out {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
 }
