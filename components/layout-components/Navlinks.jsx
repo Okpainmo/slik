@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Navlinks() {
   return (
-    <ul className='hidden md:flex gap-12 text-[16px] ml-16 items-center font-bold'>
+    <ul className='hidden md:flex gap-12 text-[12px] ml-16 items-center font-bold'>
       <li
         className='hover:underline'
         style={{ transition: 'letter-spacing ease .5s' }}
@@ -48,7 +48,7 @@ function Navlinks() {
         className='hover:underline'
         style={{ transition: 'letter-spacing ease .5s' }}
       >
-        <Link href='/about'>
+        <Link href='/about-slik'>
           <a>About</a>
         </Link>
       </li>
