@@ -5,7 +5,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Welcome to slik</title>
+        <title>Reactify: You ReactJs companion from zero to hero.</title>
       </Head>
 
       <main className='bg--default nunito-sans'>

@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const accessToken = process.env.MY_CONTENTFUL_ACCESS_TOKEN;
   const environment = process.env.MY_CONTENTFUL_ENVIRONMENT;
 
-  const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries?access_token=${accessToken}&content_type=slikBlogTutorialProject`;
+  const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries?access_token=${accessToken}&content_type=slikOpensourcePostsContentfulCmsData`;
   const response = await fetch(url);
   const data = await response.json();
 

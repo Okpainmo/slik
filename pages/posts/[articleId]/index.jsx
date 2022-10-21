@@ -18,7 +18,7 @@ function ArticlePostPage({ data, params }) {
 
   return (
     <NavPageLayout>
-      <div className='w-full sm:w-4/5 lg:w-3/5 mx-auto sm:pt-12'>
+      <div className='w-full sm:w-4/5 lg:w-3/5 mx-auto sm:pt-12 mb-28'>
         <PostIntro currentPost={currentPost} data={data} />
         <PostText currentPost={currentPost} />
       </div>
