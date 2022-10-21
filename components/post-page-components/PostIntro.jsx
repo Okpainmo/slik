@@ -2,19 +2,25 @@ import React from 'react';
 import Image from 'next/image';
 
 function PostIntro({ currentPost, data }) {
-  const { postTitle, postSubtitle, authorName, postIndex } = currentPost[0];
+  const { postTitle, postSubtitle, authorName, postId, postIndex } =
+    currentPost[0];
 
   const slikMediaData = data.includes.Asset.filter((each) => {
     return each.fields.title === 'slik-blog-project-asset';
   });
 
   const postImage = slikMediaData.filter((each) => {
-    return each.fields.file.fileName.slice(0, 1) == postIndex;
+    const postBannerName = each.fields.file.fileName;
+    const sliceEnd = postBannerName.length - 4;
+    const reqName = postBannerName.slice(0, sliceEnd);
+
+    return reqName == postId;
   });
 
   // const postImage = data.includes.Asset.filter((each) => {
   //   return each.fields.file.fileName.slice(0, 1) == postIndex;
   // });
+  // console.log(postBannerName);
 
   return (
     <section className='intro-post-details'>
@@ -31,7 +37,7 @@ function PostIntro({ currentPost, data }) {
           <Image
             src={`https:${postImage[0].fields.file.url}`}
             width={postImage[0].fields.file.details.image.width}
-            height={1200}
+            height={postImage[0].fields.file.details.image.height}
             priority
           />
         </div>

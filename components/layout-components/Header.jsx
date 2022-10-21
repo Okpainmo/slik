@@ -8,9 +8,9 @@ function Header({ showMobileNav, category, isHome }) {
         <Navbar showMobileNav={showMobileNav} />
       </div>
 
-      <div className='text-[16px] sm:text-2xl md:text-3xl lg:text-4xl pb-6 sm:pb-12 font-bold montserrat px-3'>
+      <div className='text-[16px] sm:text-2xl md:text-3xl pb-6 sm:pb-12 font-bold montserrat px-3'>
         {isHome
-          ? 'An opensource project for NextJs/ReactJs and Contentful CMS'
+          ? 'An opensource project for learning NextJs/ReactJs and Contentful CMS'
           : `Category: ${category}`}
         .
       </div>

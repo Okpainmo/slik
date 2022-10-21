@@ -4,9 +4,9 @@ import Navlinks from './Navlinks';
 
 function Navbar({ showMobileNav }) {
   return (
-    <nav className='font-bold montserrat text-3xl md:text-3xl flex justify-between w-full'>
+    <nav className='font-bold montserrat text-2xl lg:text-3xl md:text-3xl flex justify-between w-full'>
       <Link href='/'>
-        <a className='italic'>Slik</a>
+        <a className='italic'>Reactify</a>
       </Link>
       <Navlinks />
       <button

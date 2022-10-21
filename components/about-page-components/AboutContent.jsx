@@ -2,9 +2,9 @@ import React from 'react';
 
 function AboutContent() {
   return (
-    <main className='px-3 w-full sm:w-10/12 sm:mx-auto lg:w-3/5 md:mt-6'>
+    <main className='px-3 w-full sm:w-10/12 sm:mx-auto lg:w-3/5 md:mt-6 mb-40'>
       <h1 className='text-center text-3xl md:text-4xl mb-4 mt-10 font-bold montserrat'>
-        About Slik
+        About Reactify
       </h1>
       <section className='text-[17px] leading-[30px] m-serif'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className='mt-28 mb-12 text-center montserrat'>
-      Slik <br />
-      &copy; 2022 - All rights reserved
+    <footer className='mb-12 text-center montserrat'>
+      <span className='font-bold'>Reactify</span> <br />
+      {/* &copy; 2022 - All rights reserved */}
       <div>
         Made with so much{' '}
         <svg
