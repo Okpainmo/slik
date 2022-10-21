@@ -47,6 +47,10 @@ tailwind color configurations
   @apply text-gray-600;
 }
 
+.text--colors_white {
+  @apply text-white;
+}
+
 .nav--slide-in {
   transform: translateX(0);
   transition: transform 0.5s ease;
@@ -55,4 +59,11 @@ tailwind color configurations
 .nav--slide-out {
   transform: translateX(-100%);
   transition: transform 0.5s ease;
+}
+
+.background-with-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-image: url('../assets/images/background.jpg');
 }
