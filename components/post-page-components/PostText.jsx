@@ -6,7 +6,7 @@ function PostText({ currentPost }) {
 
   const articleParagraphs = postText.content.map((each) => each);
 
-  console.log(postText.content);
+  // console.log(postText.content);
 
   return (
     <section
