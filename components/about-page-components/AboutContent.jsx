@@ -7,46 +7,67 @@ function AboutContent() {
         About Reactify
       </h1>
       <section className='text-[17px] leading-[30px] m-serif'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-        neque eaque! Porro ipsam voluptatem nam dolorum aut praesentium quaerat
-        tenetur eaque, saepe asperiores itaque similique hic eius architecto
-        minus ducimus voluptas, voluptatibus quod ab libero incidunt? Blanditiis
-        quaerat temporibus earum. Nisi aperiam ratione voluptatibus unde cum
-        accusamus quis atque quidem vero perspiciatis. Recusandae, enim quidem
-        ab perferendis exercitationem, ut deleniti doloribus dolor velit,
-        eveniet esse porro libero quas beatae adipisci nesciunt tempore vero
-        quod neque? Doloremque dolorum soluta rerum consectetur dolorem nesciunt
-        nihil? Aliquid aliquam excepturi aperiam, culpa facilis eligendi alias
-        sint! Cum, voluptate, quae, similique ab ipsa voluptas quas voluptates
-        ipsum dicta repellat assumenda dolorem quasi facere fuga doloremque
-        aperiam. Culpa, officiis provident, fugiat id soluta odio optio
-        asperiores obcaecati odit quasi, molestiae velit minima distinctio
-        doloremque architecto repellat quam blanditiis numquam sit. Corrupti
-        nobis maxime praesentium esse modi quis aliquam vero rem? Illo sunt est
-        earum reiciendis quae adipisci expedita veritatis quos officiis
-        aspernatur ipsa nihil distinctio minus provident dolor, illum nesciunt
-        assumenda omnis fugit eaque
+        <p>
+          Reactify is primarily a project(an opensource blog) that is meant to
+          help people learn some web development technologies that I have come
+          to love. Like the name of the project already states, the first of
+          such amazing web development technologies, is ReactJs. Reactify is a
+          project that I built to primarily help people learn ReactJs and NextJs
+          in a way that helps them optimize the learning process. Although the
+          main themes of Reactify are ReactJs and NextJs, I added some extras to
+          the mix.
+        </p>
+        <br />
+        <p>
+          In{' '}
+          <a
+            href='https://zhacks.hashnode.dev/how-to-build-a-complete-blog-with-nextjsreact-js-and-contentful-cmspart-2'
+            target='_blank'
+            className='underline font-bold'
+          >
+            my last blog post
+          </a>{' '}
+          , I completed a series-tutorial in which I showed how to build a
+          complete blog with NextJs, tailwindCSS, and Contentful CMS. In the
+          post, I stated that I was going to scale the blog project into an
+          awesome resource for learning ReactJs and NextJs. Even though the idea
+          of how to come around with Reactify was not totally clear by then,
+          Reactify is what I was talking about – now it’s here. Since it is an
+          opensource project, it surely won’t be a bad idea to have a section
+          dedicated to helping people learn about opensource – so I added an
+          opensource category. The final category(to make it four), which is
+          currently present on Reactify, is a category dedicated to helping
+          people get started with CMS by learning how to use Contentful CMS. I
+          must admit that I fell in love with Contentful CMS after discovery all
+          the amazing features it had to offer users and developers.
+        </p>
+        <br />
+        <p>
+          Please{' '}
+          <a
+            href='https://zhacks.hashnode.dev/finish-celebrating-hacktoberfest-2022-by-contributing-to-reactify'
+            target='_blank'
+            className='underline font-bold'
+          >
+            read the Reactify-project release article
+          </a>{' '}
+          to learn more about the reactify project and how to contribute to it.
+        </p>
         <h1 className='text-2xl mt-3 mb-2 montserrat font-bold capitalize'>
           Our Philosophy
         </h1>
-        necessitatibus placeat soluta modi. Quidem, numquam ipsa illo dolorem
-        quisquam iure temporibus provident quod rem consectetur accusamus enim
-        quia ad vero quae quaerat dolores ab molestias odio aut harum? Animi
-        nihil expedita, aut sint vel provident, sapiente praesentium quo
-        repellendus aspernatur cupiditate, ut quis numquam modi odio dignissimos
-        officia culpa deserunt minima placeat. Consectetur sapiente cupiditate
-        porro perspiciatis, ducimus unde esse quaerat. Modi mollitia ipsum nobis
-        aut necessitatibus quod vitae nesciunt, sequi reiciendis iure fuga quos
-        optio odio! Voluptatum, esse. Iusto, tenetur ut excepturi odio
-        perferendis voluptatibus reprehenderit in dolor nam eum. Architecto sed
-        vel, et ab voluptatum ratione!
-        <h1 className='text-2xl mt-3 mb-2 montserrat font-bold capitalize'>
-          Meet our team
-        </h1>
-        Saepe amet molestias, facilis ratione molestiae quod cumque excepturi
-        quis. Totam veritatis quam, molestiae quas culpa tempora aliquam, dolor
-        recusandae sequi autem vel corrupti aliquid velit ullam quasi neque
-        vitae tempore placeat voluptatem.
+        Reactify is an opensource project that will be receiving contributions
+        from various contributors who are of different backgrounds and different
+        skill levels. Hence, it is important for everyone to collaborate
+        peacefully and as a team. Reactify Code of conduct follows the
+        Contributor Covenant code of conduct. By making a contribution to the
+        project, every contributor agrees to abide by the dictates of the
+        Contributor Covenant code of conduct, and agrees that their
+        contributions are out of goodwill and not for any financial returns from
+        Reactify. The project maintainer(s) reserve the right to direct the
+        project and make decisions as seen fit for the progress of the project.
+        All relevant suggestions are very much welcomed – we’re one big team
+        guys.
       </section>
     </main>
   );
