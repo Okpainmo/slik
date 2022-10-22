@@ -5,7 +5,7 @@ import NavPageLayout from '../../../components/layout-components/NavPageLayout';
 
 function ArticlePostPage({ data, params }) {
   const slikBlogData = data.items.filter((each) => {
-    return each.fields.projectId === 'slik';
+    return each.fields.projectId === 'slik-opensource';
   });
 
   const postCardsData = slikBlogData.map((each) => {
@@ -39,7 +39,7 @@ export async function getStaticPaths() {
   const data = await response.json();
 
   const slikBlogData = data.items.filter((each) => {
-    return each.fields.projectId === 'slik';
+    return each.fields.projectId === 'slik-opensource';
   });
 
   const postCardsData = slikBlogData.map((each) => {

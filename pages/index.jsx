@@ -7,7 +7,7 @@ function Index() {
 
   return (
     <HeaderPageLayout isHome={isHome}>
-      <main className='flex flex-col px-3 sm:px-16 lg:px-20 mt-20 mb-40 gap-8 lg:grid grid-cols-2 lg:w-10/12 lg:mx-auto'>
+      <main className='flex flex-col px-3 sm:px-16 lg:px-20 mt-10 sm:mt-20 mb-40 gap-8 lg:grid grid-cols-2 lg:w-10/12 lg:mx-auto'>
         <Link href='/reactjs-tutorials'>
           <a>
             <div className='rounded-lg background-with-overlay flex items-center justify-center w-full min-h-[200px] px-4 font-bold text--colors_white montserrat text-2xl'>
