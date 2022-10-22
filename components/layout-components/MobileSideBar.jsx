@@ -40,7 +40,7 @@ function MobileSideBar({ hideMobileNav, closeMobileNav }) {
           </Link>
           <Link href='/opensource-hacktoberfest'>
             <a className='nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700 w-[80%]'>
-              <span>Hacktoberfest</span>
+              <span>Opensource</span>
             </a>
           </Link>
           <Link href='/contentful-tutorials'>

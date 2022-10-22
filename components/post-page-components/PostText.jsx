@@ -11,7 +11,7 @@ function PostText({ currentPost }) {
   return (
     <section
       className='post-text w-full px-3 xsm:px-[20px] sm:p-0 m-serif mx-auto 
-     mt-2 sm:mt-6 sm:text-[18px] text-[16px] leading-[32px]'
+     mt-2 sm:mt-6 text-[16px] leading-[32px]'
     >
       {articleParagraphs.map((paragraph) => {
         // console.log(articleParagraphs.indexOf(paragraph));

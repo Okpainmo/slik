@@ -33,7 +33,7 @@ function Navlinks() {
         style={{ transition: 'letter-spacing ease .5s' }}
       >
         <Link href='/opensource-hacktoberfest'>
-          <a>Hactoberfest</a>
+          <a>Opensource</a>
         </Link>
       </li>
       <li
