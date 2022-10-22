@@ -6,6 +6,11 @@ function AboutContent() {
       <h1 className='text-center text-3xl md:text-4xl mb-4 mt-10 font-bold montserrat'>
         About Reactify
       </h1>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, velit
+      officiis? Ad sapiente animi assumenda illo quibusdam rerum quidem
+      provident, sunt omnis a aut libero voluptas fuga culpa accusantium,
+      architecto quis, numquam impedit excepturi temporibus laudantium adipisci.
+      Velit, consequatur molestiae.
       <section className='text-[17px] leading-[35px] m-serif'>
         <p>
           Reactify is primarily a project(an opensource blog) that is meant to
