@@ -53,7 +53,7 @@ function AboutContent() {
           </a>{' '}
           to learn more about the reactify project and how to contribute to it.
         </p>
-        <h1 className='text-2xl mt-3 mb-6 montserrat font-bold capitalize'>
+        <h1 className='text-2xl mt-8 mb-6 montserrat font-bold capitalize'>
           Our Philosophy
         </h1>
         Reactify is an opensource project that will be receiving contributions
