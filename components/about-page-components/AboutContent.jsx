@@ -3,14 +3,9 @@ import React from 'react';
 function AboutContent() {
   return (
     <main className='px-3 w-full sm:w-10/12 sm:mx-auto lg:w-3/5 md:mt-6 mb-40'>
-      <h1 className='text-center text-3xl md:text-4xl mb-4 mt-10 font-bold montserrat'>
+      <h1 className='text-center text-3xl md:text-4xl mb-6 mt-10 font-bold montserrat'>
         About Reactify
       </h1>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, velit
-      officiis? Ad sapiente animi assumenda illo quibusdam rerum quidem
-      provident, sunt omnis a aut libero voluptas fuga culpa accusantium,
-      architecto quis, numquam impedit excepturi temporibus laudantium adipisci.
-      Velit, consequatur molestiae.
       <section className='text-[17px] leading-[35px] m-serif'>
         <p>
           Reactify is primarily a project(an opensource blog) that is meant to
@@ -58,7 +53,7 @@ function AboutContent() {
           </a>{' '}
           to learn more about the reactify project and how to contribute to it.
         </p>
-        <h1 className='text-2xl mt-3 mb-2 montserrat font-bold capitalize'>
+        <h1 className='text-2xl mt-3 mb-6 montserrat font-bold capitalize'>
           Our Philosophy
         </h1>
         Reactify is an opensource project that will be receiving contributions
